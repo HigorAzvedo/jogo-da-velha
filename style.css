@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px solid black;
+    display: inline-block;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.662);
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "\26AB";
+    font-size: 50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    line-height: 100px;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    line-height: 100px;
+}
